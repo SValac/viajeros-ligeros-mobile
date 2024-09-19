@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Viajeros Ligeros</string>
+
+    <!--String Names for the activity_main.xml  (Home)-->
+    <string name="home_destino">Destino:</string>
+    <string name="home_fecha">Fecha:</string>
+    <string name="home_costo_pasaje">Costo del Pasaje:</string>
+    <string name="home_lugares_disponibles">Lugares Disponibles:</string>
+
+    <!--String Names for the activity_registro_viajeros.xml-->
+    <string name="registro_viajeros_label_android">Registro de Viajeros</string>
+    <string name="viajeros_nombre">Nombre</string>
+    <string name="viajeros_telefono">Telefono</string>
+    <string name="viajeros_destino"> Destino</string>
+    <string name="viajeros_tipo_habitacion">Tipo de Habitacion</string>
+    <string name="viajeros_anticipo">Anticipo</string>
+    <string name="viajeros_punto_abordaje">Punto de Abordaje</string>
+    <string name="viajeros_numero_asiento">Numero de Asiento</string>
+    <string name="viajeros_representante_grupo">Representante del Grupo</string>
+    <string name="viajeros_observaciones_comentarios">Observaciones y Comentarios</string>
+    <string name="viajeros_registrar_viajero_btn">Registrar Viajero</string>
+
+    <!--String Names for the activity_registro_viajee.xml-->
+    <string name="registro_destino_label_android">Registro de Viajes</string>
+    <string name="hint_nombre_viaje">Ingrese nombre del viaje</string>
+    <string name="destino_nombre_viaje">Nombre del Viaje</string>
+    <string name="destino_costo_asiento">Costo del Asiento</string>
+    <string name="destino_numero_asientos">Numero de Asientos</string>
+    <string name="destino_detalles_adicionales">Detalles Adicionales</string>
+    <string name="destino_registrar_destino_btn">Registrar Viaje</string>
+
+
+    <!--string names para opciones de respuesta genericas-->
+    <string name="opcion_si">Si</string>
+    <string name="opcion_no">No</string>
+    <string name="hint_costos">$1,234.56</string>
+    <string name="hint_observaciones_comentarios">ingresa aqui cualquier comentario addicional con la finalidad de brindar un mejor servicio.</string>
+    <string name="nombre_del_viaje">Nombre del Viaje</string>
+    <string name="hint_ingresa_nombre_del_viaje">Ingresa Nombre del VIaje</string>
+    <string name="costo_del_pasaje_por_persona">Costo del pasaje por persona</string>
+    <string name="hint_costo">$1,234.00</string>
+    <string name="numero_de_asientos_disponibles">Numero de asientos disponibles</string>
+    <string name="hint_numero_asintos">45</string>
+    <string name="hint_detalles_adicionales">Ingresa aqui cualquier detalles adiconal o comentario hacerca del viaje</string>
+    <string name="detalles_adicionales_del_viaje">Detalles Adicionales del Viaje</string>
+    <string name="registrar_viaje">Registrar Viaje</string>
+    <string name="mis_viajes">Mis Viajes</string>
+    <string name="agregar_viaje">Agregar Viaje</string>
+    <string name="about_viajeros_ligeros">About Viajeros Ligeros</string>
+    <string name="label_mis_viajes">Mis Viajes</string>
+    <string name="borrar_tabla_destinos">Borrar Tabla Destinos</string>
+
+    <!--String name for menu_viajero_details-->
+    <string name="menu_viajero_editar">Editar</string>
+    <string name="menu_viajero_eliminar">Eliminar</string>
+
+
+</resources>

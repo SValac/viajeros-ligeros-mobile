@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/agregar_viaje"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/agregar_viaje" />
+    <item
+        android:id="@+id/delete_table_destinos"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/borrar_tabla_destinos" />
+
+    <item
+        android:id="@+id/about"
+        app:showAsAction="never"
+        android:title="@string/about_viajeros_ligeros" />
+
+
+
+</menu>

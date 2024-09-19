@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroViajeros">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nombre1_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/viajeros_nombre"
+            app:layout_constraintBaseline_toBaselineOf="@+id/nombre_edtxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/telefono_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/viajeros_telefono"
+            app:layout_constraintBaseline_toBaselineOf="@+id/telefono_edtxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/telefono_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3121273023"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/telefono_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_edtxt" />
+
+        <TextView
+            android:id="@+id/destino_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/viajeros_destino"
+            app:layout_constraintBaseline_toBaselineOf="@+id/destino_edtxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/destino_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Ingresa Destino"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/destino_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/telefono_edtxt" />
+
+        <EditText
+            android:id="@+id/nombre_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Ingresa Nombre"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nombre1_txtvw"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tipo_habitacion_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/viajeros_tipo_habitacion"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tipo_habitacion_edtxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/tipo_habitacion_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="habitacion doble"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tipo_habitacion_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/destino_edtxt" />
+
+        <TextView
+            android:id="@+id/anticipo_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/viajeros_anticipo"
+            app:layout_constraintBottom_toTopOf="@+id/punto_abordaje_txtvw"
+            app:layout_constraintEnd_toStartOf="@+id/anticipo_rdgrp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_habitacion_txtvw" />
+
+        <RadioGroup
+            android:id="@+id/anticipo_rdgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/punto_abordaje_edtxt"
+            app:layout_constraintEnd_toStartOf="@+id/anticipo_edtxt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/anticipo_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_habitacion_edtxt">
+
+            <RadioButton
+                android:id="@+id/anticipo_yes_rdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/opcion_si"
+                app:layout_constraintBaseline_toBaselineOf="@+id/anticipo_no_rdbtn"
+                app:layout_constraintStart_toEndOf="@+id/anticipo_txtvw" />
+
+            <RadioButton
+                android:id="@+id/anticipo_no_rdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/opcion_no"
+                app:layout_constraintBaseline_toBaselineOf="@+id/anticipo_edtxt"
+                app:layout_constraintStart_toEndOf="@+id/anticipo_yes_rdbtn" />
+
+        </RadioGroup>
+
+        <!-- <RadioButton
+            android:id="@+id/anticipo_yes_rdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:text="Si"
+            app:layout_constraintBaseline_toBaselineOf="@+id/anticipo_no_rdbtn"
+            app:layout_constraintStart_toEndOf="@+id/anticipo_txtvw" />
+
+        <RadioButton
+            android:id="@+id/anticipo_no_rdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="No"
+            app:layout_constraintBaseline_toBaselineOf="@+id/anticipo_edtxt"
+            app:layout_constraintStart_toEndOf="@+id/anticipo_yes_rdbtn" />-->
+
+        <EditText
+            android:id="@+id/anticipo_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/punto_abordaje_edtxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/anticipo_rdgrp"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_habitacion_edtxt" />
+
+        <TextView
+            android:id="@+id/punto_abordaje_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/viajeros_punto_abordaje"
+            app:layout_constraintBaseline_toBaselineOf="@+id/punto_abordaje_edtxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/punto_abordaje_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Ingresa Punto de Abordaje"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/punto_abordaje_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/anticipo_edtxt" />
+
+        <TextView
+            android:id="@+id/numero_asientos_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/viajeros_numero_asiento"
+            app:layout_constraintBaseline_toBaselineOf="@+id/asiento_edtxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/asiento_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/numero_asientos_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/punto_abordaje_edtxt" />
+
+        <TextView
+            android:id="@+id/representate_grupo_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/viajeros_representante_grupo"
+            app:layout_constraintBottom_toTopOf="@+id/observaciones_comentarios_txtvw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asiento_edtxt" />
+
+        <RadioGroup
+            android:id="@+id/representante_grupo_rdgrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/observaciones_comentarios_txtvw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/representate_grupo_txtvw"
+            app:layout_constraintTop_toBottomOf="@+id/asiento_edtxt">
+
+            <RadioButton
+                android:id="@+id/represante_grupo_yes_rdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/opcion_si" />
+
+            <RadioButton
+                android:id="@+id/representante_grupo_no_rdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/opcion_no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/observaciones_comentarios_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/viajeros_observaciones_comentarios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/representate_grupo_txtvw" />
+
+        <EditText
+            android:id="@+id/observaciones_comentarios_edtxt"
+            android:layout_width="0dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/hint_observaciones_comentarios"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/registrar_viajero_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/observaciones_comentarios_txtvw" />
+
+        <Button
+            android:id="@+id/registrar_viajero_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/viajeros_registrar_viajero_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

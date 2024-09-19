@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EB3838">
+
+        <ImageView
+            android:id="@+id/viajeros_ligeros_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/viajeros_lijeros_light"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/viajeros_ligeros_imageview"
+            android:background="#247A28">
+
+            <TextView
+                android:id="@+id/destino_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/home_destino" />
+
+            <TextView
+                android:id="@+id/destino_viaje_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/destino_textview"
+                android:hint="Mariposa Monarca"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fecha_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/destino_textview"
+                android:layout_marginRight="10dp"
+                android:text="@string/home_fecha" />
+
+            <TextView
+                android:id="@+id/fecha_viaje_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/destino_viaje_text_view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/fecha_textview"
+                android:hint="08 Marzo 2019"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/costo_pasaje_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fecha_textview"
+                android:layout_marginRight="10dp"
+                android:text="@string/home_costo_pasaje" />
+
+            <TextView
+                android:id="@+id/costo_viaje_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fecha_viaje_text_view"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/costo_pasaje_textview"
+                android:hint="$2,222.00 pp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lugares_disponibles_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/costo_pasaje_textview"
+                android:layout_marginRight="10dp"
+                android:text="@string/home_lugares_disponibles" />
+
+            <TextView
+                android:id="@+id/lugares_disponibles_viaje_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/costo_viaje_text_view"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/lugares_disponibles_textview"
+                android:hint="45"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registroViajeroBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro Viajero"/>
+
+    <Button
+        android:id="@+id/registroDestinoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro Destino"/>
+
+
+    <Button
+        android:id="@+id/test_dao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log destinos balbalbla"/>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
